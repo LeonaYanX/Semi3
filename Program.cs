@@ -61,21 +61,33 @@
 // [1 3 2 4 2 3] => [3 6 8]
 // [2 3 1 7 5 6 3] => [6 18 5] (элемент 7 не имеет пары)
 
-int sizeArray = Convert.ToInt32(Console.ReadLine());
+// int sizeArray = Convert.ToInt32(Console.ReadLine());
 
-int [] array = new int [sizeArray]; 
-int [] array2 = new int [sizeArray/2]; 
+// int [] array = new int [sizeArray]; 
+// int [] array2 = new int [sizeArray/2]; 
 
-for (int i = 0; i < array.Length; i++)
+// for (int i = 0; i < array.Length; i++)
+// {
+//     array[i] = new Random().Next(-10,11);
+//     Console.Write(array[i]+ " ");
+// }
+
+// System.Console.WriteLine();
+
+// for (int i = 0; i < array2.Length; i++)
+// {
+//     array2[i] = array[i] * array[array.Length - 1-i];
+//     System.Console.Write(array2[i] + "\t");
+// }
+int num = Convert.ToInt32(Console.ReadLine());
+int sizeArray = 3;
+
+int [] array = new int [sizeArray];  
+
+for (int i = 0; num > 0; i++,num/=10 )
 {
-    array[i] = new Random().Next(-10,11);
+    array[i] = num %10;
     Console.Write(array[i]+ " ");
 }
 
-System.Console.WriteLine();
-
-for (int i = 0; i < array2.Length; i++)
-{
-    array2[i] = array[i] * array[array.Length - 1-i];
-    System.Console.Write(array2[i] + "\t");
-}
+22:16
