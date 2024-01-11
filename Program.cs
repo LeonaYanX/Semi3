@@ -79,15 +79,18 @@
 //     array2[i] = array[i] * array[array.Length - 1-i];
 //     System.Console.Write(array2[i] + "\t");
 // }
-int num = Convert.ToInt32(Console.ReadLine());
-int sizeArray = 3;
 
-int [] array = new int [sizeArray];  
+//task4
 
-for (int i = 0; num > 0; i++,num/=10 )
-{
-    array[i] = num %10;
-    Console.Write(array[i]+ " ");
-}
+// int num = Convert.ToInt32(Console.ReadLine());
+// int sizeArray = 3;
 
-22:16
+// int [] array = new int [sizeArray];  
+
+// for (int i = 0; num > 0; i++,num/=10 )
+// {
+//     array[i] = num %10;
+//     Console.Write(array[i]+ " ");
+// }
+
+//в настройках .csproj можно указать версию <TargetFramework>net8.0</TargetFramework>
